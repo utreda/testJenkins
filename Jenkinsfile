@@ -15,6 +15,12 @@ pipeline {
           }
         }
 
+        stage('') {
+          steps {
+            sh 'echo test sh'
+          }
+        }
+
       }
     }
 
