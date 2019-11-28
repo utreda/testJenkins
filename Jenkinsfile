@@ -8,13 +8,6 @@ pipeline {
             echo 'Essai'
           }
         }
-
-        stage('test maven') {
-          steps {
-            mvn test
-          }
-        }
-
       }
     }
 
