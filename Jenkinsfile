@@ -8,6 +8,13 @@ pipeline {
             echo 'Essai'
           }
         }
+
+        stage('') {
+          steps {
+            sh 'mvn --version'
+          }
+        }
+
       }
     }
 
