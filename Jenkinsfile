@@ -11,11 +11,12 @@ pipeline {
 
         stage('test maven') {
           steps {
-            sh 'mvn test'
+            sh '''mvn --version
+'''
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo test sh'
           }
