@@ -2,8 +2,25 @@ pipeline {
   agent any
   stages {
     stage('Test') {
+      parallel {
+        stage('Test') {
+          steps {
+            echo 'Essai'
+          }
+        }
+
+        stage('test maven') {
+          steps {
+            sh 'mvn test'
+          }
+        }
+
+      }
+    }
+
+    stage('fini') {
       steps {
-        echo 'Essai'
+        echo 'Builds finis!'
       }
     }
 
