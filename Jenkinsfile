@@ -9,9 +9,9 @@ pipeline {
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
-            sh 'mvn --version'
+            sh 'mvn test'
           }
         }
 
