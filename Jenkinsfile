@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Test') {
           steps {
-            echo 'Essai'
+            sh 'echo \'test sh\''
           }
         }
 
